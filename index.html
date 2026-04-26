@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Photo Equipment & Imaging Service Provider, High-quality products for global clients">
+    <title>PhotoPro | Professional Imaging Equipment & Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- 固定导航栏 -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-blue-700">PhotoPro</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-700 font-medium">Home</a>
+                    <a href="#products" class="text-gray-700 hover:text-blue-700 font-medium">Products</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium">About Us</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
+                </div>
+                <div>
+                    <a href="/admin.html" class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition font-medium">Admin Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页Banner -->
+    <section id="home" class="pt-24 pb-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Professional Imaging Solutions For Global Business</h2>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">High-quality photo equipment, custom imaging services, fast global shipping, reliable after-sales support</p>
+                <a href="#products" class="bg-white text-blue-700 px-8 py-3 rounded-md font-bold text-lg hover:bg-gray-100 transition">Browse Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品展示区 -->
+    <section id="products" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Core Products</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We provide a full range of imaging equipment and customized services for professional photographers, studios, and enterprises</p>
+            </div>
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <div class="col-span-full text-center text-gray-500 py-12" id="loading-text">Loading products...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">About PhotoPro</h2>
+                <p class="text-gray-600 mb-4 text-lg">With over 10 years of experience in the imaging industry, we are a comprehensive enterprise integrating R&D, production, and sales of professional photo equipment.</p>
+                <p class="text-gray-600 mb-8 text-lg">Our products are exported to more than 50 countries and regions around the world, providing one-stop imaging solutions for global clients.</p>
+                <div class="grid grid-cols-3 gap-4 text-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-blue-700 mb-2">50+</h3>
+                        <p class="text-gray-600">Countries Served</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-blue-700 mb-2">1000+</h3>
+                        <p class="text-gray-600">Global Partners</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-blue-700 mb-2">10+</h3>
+                        <p class="text-gray-600">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Contact Us</h2>
+                <p class="text-gray-600">For bulk orders, customization, or any inquiries, please feel free to contact us</p>
+            </div>
+            <div class="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-envelope text-3xl text-blue-700 mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Email</h3>
+                    <p class="text-gray-600">sales@photopro.com</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-phone text-3xl text-blue-700 mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">WhatsApp</h3>
+                    <p class="text-gray-600">+86 123 4567 8910</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>© 2024 PhotoPro. All Rights Reserved. Professional Imaging Equipment Supplier</p>
+        </div>
+    </footer>
+
+    <!-- 产品加载渲染逻辑 -->
+    <script>
+        window.addEventListener('DOMContentLoaded', async () => {
+            const productGrid = document.getElementById('product-grid');
+            const loadingText = document.getElementById('loading-text');
+            
+            try {
+                const response = await fetch('/api/products');
+                if (!response.ok) throw new Error('API request failed');
+                
+                const products = await response.json();
+                loadingText.remove();
+
+                if (products.length === 0) {
+                    productGrid.innerHTML = '<div class="col-span-full text-center text-gray-500 py-12">No products yet. Please log in to the admin backend to upload products.</div>';
+                    return;
+                }
+
+                products.forEach(product => {
+                    const productCard = document.createElement('div');
+                    productCard.className = 'bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow';
+                    productCard.innerHTML = `
+                        <img src="${product.image_url}" alt="${product.name}" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">${product.name}</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-3">${product.description}</p>
+                            <p class="text-2xl font-bold text-blue-700 mb-4">$${product.price.toFixed(2)}</p>
+                            <a href="#contact" class="block w-full bg-blue-700 text-white text-center py-2 rounded-md hover:bg-blue-800 transition">Inquiry Now</a>
+                        </div>
+                    `;
+                    productGrid.appendChild(productCard);
+                });
+
+            } catch (error) {
+                loadingText.textContent = 'Failed to load products. Please check the backend configuration.';
+                console.error('Product load error:', error);
+            }
+        });
+    </script>
+</body>
+</html>
