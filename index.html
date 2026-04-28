@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Photo Equipment & Imaging Service Provider, High-quality products for global clients">
-    <title>PhotoPro | Professional Imaging Equipment & Service</title>
+    <!-- 多语言SEO谷歌收录配置 -->
+    <link rel="alternate" hreflang="en" href="https://YOUR-PAGES-DOMAIN.pages.dev" />
+    <link rel="alternate" hreflang="fr" href="https://YOUR-PAGES-DOMAIN.pages.dev?lang=fr" />
+    <link rel="alternate" hreflang="de" href="https://YOUR-PAGES-DOMAIN.pages.dev?lang=de" />
+    <link rel="alternate" hreflang="ar" href="https://YOUR-PAGES-DOMAIN.pages.dev?lang=ar" />
+    <link rel="alternate" hreflang="es" href="https://YOUR-PAGES-DOMAIN.pages.dev?lang=es" />
+    <link rel="alternate" hreflang="it" href="https://YOUR-PAGES-DOMAIN.pages.dev?lang=it" />
+    <link rel="alternate" hreflang="x-default" href="https://YOUR-PAGES-DOMAIN.pages.dev" />
+    <!-- 多语言meta标签（动态更新） -->
+    <meta name="description" content="Professional Photo Equipment & Imaging Service Provider, High-quality products for global clients" id="meta-desc">
+    <title id="page-title">PhotoPro | Professional Imaging Equipment & Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind RTL适配配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .rtl-flip {
+                transform: scaleX(-1);
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-50 font-sans">
     <!-- 固定导航栏 -->
@@ -16,14 +40,25 @@
                 <div class="flex-shrink-0">
                     <h1 class="text-2xl font-bold text-blue-700">PhotoPro</h1>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-blue-700 font-medium">Home</a>
-                    <a href="#products" class="text-gray-700 hover:text-blue-700 font-medium">Products</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium">About Us</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
+                <div class="hidden md:flex space-x-8 rtl:space-x-reverse" id="nav-menu">
+                    <a href="#home" class="text-gray-700 hover:text-blue-700 font-medium" data-lang="nav.home">Home</a>
+                    <a href="#products" class="text-gray-700 hover:text-blue-700 font-medium" data-lang="nav.products">Products</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium" data-lang="nav.about">About Us</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium" data-lang="nav.contact">Contact</a>
                 </div>
-                <div>
-                    <a href="/admin.html" class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition font-medium">Admin Login</a>
+                <div class="flex items-center gap-4 rtl:space-x-reverse">
+                    <!-- 语言切换下拉框 -->
+                    <div class="relative">
+                        <select id="lang-select" class="bg-gray-100 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                            <option value="de">Deutsch</option>
+                            <option value="ar">العربية</option>
+                            <option value="es">Español</option>
+                            <option value="it">Italiano</option>
+                        </select>
+                    </div>
+                    <a href="/admin.html" class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition font-medium" data-lang="nav.admin">Admin Login</a>
                 </div>
             </div>
         </div>
@@ -33,9 +68,9 @@
     <section id="home" class="pt-24 pb-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="text-center">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Professional Imaging Solutions For Global Business</h2>
-                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">High-quality photo equipment, custom imaging services, fast global shipping, reliable after-sales support</p>
-                <a href="#products" class="bg-white text-blue-700 px-8 py-3 rounded-md font-bold text-lg hover:bg-gray-100 transition">Browse Products</a>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6" data-lang="banner.title">Professional Imaging Solutions For Global Business</h2>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto" data-lang="banner.subtitle">High-quality photo equipment, custom imaging services, fast global shipping, reliable after-sales support</p>
+                <a href="#products" class="bg-white text-blue-700 px-8 py-3 rounded-md font-bold text-lg hover:bg-gray-100 transition" data-lang="banner.btn">Browse Products</a>
             </div>
         </div>
     </section>
@@ -44,11 +79,11 @@
     <section id="products" class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Core Products</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">We provide a full range of imaging equipment and customized services for professional photographers, studios, and enterprises</p>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-lang="products.title">Our Core Products</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-lang="products.subtitle">We provide a full range of imaging equipment and customized services for professional photographers, studios, and enterprises</p>
             </div>
             <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <div class="col-span-full text-center text-gray-500 py-12" id="loading-text">Loading products...</div>
+                <div class="col-span-full text-center text-gray-500 py-12" id="loading-text" data-lang="products.loading">Loading products...</div>
             </div>
         </div>
     </section>
@@ -57,21 +92,21 @@
     <section id="about" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">About PhotoPro</h2>
-                <p class="text-gray-600 mb-4 text-lg">With over 10 years of experience in the imaging industry, we are a comprehensive enterprise integrating R&D, production, and sales of professional photo equipment.</p>
-                <p class="text-gray-600 mb-8 text-lg">Our products are exported to more than 50 countries and regions around the world, providing one-stop imaging solutions for global clients.</p>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6" data-lang="about.title">About PhotoPro</h2>
+                <p class="text-gray-600 mb-4 text-lg" data-lang="about.desc1">With over 10 years of experience in the imaging industry, we are a comprehensive enterprise integrating R&D, production, and sales of professional photo equipment.</p>
+                <p class="text-gray-600 mb-8 text-lg" data-lang="about.desc2">Our products are exported to more than 50 countries and regions around the world, providing one-stop imaging solutions for global clients.</p>
                 <div class="grid grid-cols-3 gap-4 text-center">
                     <div>
                         <h3 class="text-3xl font-bold text-blue-700 mb-2">50+</h3>
-                        <p class="text-gray-600">Countries Served</p>
+                        <p class="text-gray-600" data-lang="about.country">Countries Served</p>
                     </div>
                     <div>
                         <h3 class="text-3xl font-bold text-blue-700 mb-2">1000+</h3>
-                        <p class="text-gray-600">Global Partners</p>
+                        <p class="text-gray-600" data-lang="about.partner">Global Partners</p>
                     </div>
                     <div>
                         <h3 class="text-3xl font-bold text-blue-700 mb-2">10+</h3>
-                        <p class="text-gray-600">Years Experience</p>
+                        <p class="text-gray-600" data-lang="about.experience">Years Experience</p>
                     </div>
                 </div>
             </div>
@@ -82,8 +117,8 @@
     <section id="contact" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Contact Us</h2>
-                <p class="text-gray-600">For bulk orders, customization, or any inquiries, please feel free to contact us</p>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-lang="contact.title">Contact Us</h2>
+                <p class="text-gray-600" data-lang="contact.subtitle">For bulk orders, customization, or any inquiries, please feel free to contact us</p>
             </div>
             <div class="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md text-center">
@@ -103,13 +138,368 @@
     <!-- 页脚 -->
     <footer class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>© 2024 PhotoPro. All Rights Reserved. Professional Imaging Equipment Supplier</p>
+            <p data-lang="footer.copyright">© 2024 PhotoPro. All Rights Reserved. Professional Imaging Equipment Supplier</p>
         </div>
     </footer>
 
-    <!-- 产品加载渲染逻辑 -->
+    <!-- 6语种语言包 -->
     <script>
-        window.addEventListener('DOMContentLoaded', async () => {
+        const langPack = {
+            en: {
+                nav: {
+                    home: "Home",
+                    products: "Products",
+                    about: "About Us",
+                    contact: "Contact",
+                    admin: "Admin Login"
+                },
+                banner: {
+                    title: "Professional Imaging Solutions For Global Business",
+                    subtitle: "High-quality photo equipment, custom imaging services, fast global shipping, reliable after-sales support",
+                    btn: "Browse Products"
+                },
+                products: {
+                    title: "Our Core Products",
+                    subtitle: "We provide a full range of imaging equipment and customized services for professional photographers, studios, and enterprises",
+                    loading: "Loading products...",
+                    empty: "No products yet. Please log in to the admin backend to upload products.",
+                    loadError: "Failed to load products. Please check the backend configuration.",
+                    inquiryBtn: "Inquiry Now"
+                },
+                about: {
+                    title: "About PhotoPro",
+                    desc1: "With over 10 years of experience in the imaging industry, we are a comprehensive enterprise integrating R&D, production, and sales of professional photo equipment.",
+                    desc2: "Our products are exported to more than 50 countries and regions around the world, providing one-stop imaging solutions for global clients.",
+                    country: "Countries Served",
+                    partner: "Global Partners",
+                    experience: "Years Experience"
+                },
+                contact: {
+                    title: "Contact Us",
+                    subtitle: "For bulk orders, customization, or any inquiries, please feel free to contact us"
+                },
+                footer: {
+                    copyright: "© 2024 PhotoPro. All Rights Reserved. Professional Imaging Equipment Supplier"
+                },
+                meta: {
+                    title: "PhotoPro | Professional Imaging Equipment & Service",
+                    desc: "Professional Photo Equipment & Imaging Service Provider, High-quality products for global clients"
+                }
+            },
+            fr: {
+                nav: {
+                    home: "Accueil",
+                    products: "Produits",
+                    about: "À Propos",
+                    contact: "Contact",
+                    admin: "Connexion Admin"
+                },
+                banner: {
+                    title: "Solutions d'Imagerie Professionnelles pour les Entreprises Mondiales",
+                    subtitle: "Équipement photo de haute qualité, services d'imagerie personnalisés, livraison mondiale rapide, support après-vente fiable",
+                    btn: "Voir les Produits"
+                },
+                products: {
+                    title: "Nos Produits Principaux",
+                    subtitle: "Nous proposons une gamme complète d'équipements d'imagerie et de services personnalisés pour les photographes professionnels, les studios et les entreprises",
+                    loading: "Chargement des produits...",
+                    empty: "Aucun produit pour le moment. Veuillez vous connecter à l'interface d'administration pour télécharger des produits.",
+                    loadError: "Échec du chargement des produits. Veuillez vérifier la configuration du backend.",
+                    inquiryBtn: "Demander un Devis"
+                },
+                about: {
+                    title: "À Propos de PhotoPro",
+                    desc1: "Avec plus de 10 ans d'expérience dans l'industrie de l'imagerie, nous sommes une entreprise intégrée regroupant la R&D, la production et la vente d'équipements photo professionnels.",
+                    desc2: "Nos produits sont exportés dans plus de 50 pays et régions du monde, offrant des solutions d'imagerie clé en main pour les clients du monde entier.",
+                    country: "Pays Desservis",
+                    partner: "Partenaires Mondiaux",
+                    experience: "Années d'Expérience"
+                },
+                contact: {
+                    title: "Contactez-Nous",
+                    subtitle: "Pour les commandes en gros, la personnalisation ou toute demande, n'hésitez pas à nous contacter"
+                },
+                footer: {
+                    copyright: "© 2024 PhotoPro. Tous Droits Réservés. Fournisseur d'Équipements d'Imagerie Professionnels"
+                },
+                meta: {
+                    title: "PhotoPro | Équipement et Service d'Imagerie Professionnels",
+                    desc: "Fournisseur d'équipements photo et de services d'imagerie professionnels, produits de haute qualité pour les clients du monde entier"
+                }
+            },
+            de: {
+                nav: {
+                    home: "Startseite",
+                    products: "Produkte",
+                    about: "Über Uns",
+                    contact: "Kontakt",
+                    admin: "Admin Login"
+                },
+                banner: {
+                    title: "Professionelle Bildlösungen für Globale Unternehmen",
+                    subtitle: "Hochwertige Fotoausrüstung, maßgeschneiderte Bilddienstleistungen, schneller weltweiter Versand, zuverlässiger Kundendienst",
+                    btn: "Produkte Ansehen"
+                },
+                products: {
+                    title: "Unsere Kernprodukte",
+                    subtitle: "Wir bieten ein umfassendes Sortiment an Bildgeräten und maßgeschneiderten Dienstleistungen für professionelle Fotografen, Studios und Unternehmen",
+                    loading: "Produkte werden geladen...",
+                    empty: "Noch keine Produkte. Bitte melden Sie sich im Admin-Bereich an, um Produkte hochzuladen.",
+                    loadError: "Produkte konnten nicht geladen werden. Bitte überprüfen Sie die Backend-Konfiguration.",
+                    inquiryBtn: "Anfrage Senden"
+                },
+                about: {
+                    title: "Über PhotoPro",
+                    desc1: "Mit über 10 Jahren Erfahrung in der Bildbranche sind wir ein umfassendes Unternehmen, das Forschung, Entwicklung, Produktion und Vertrieb professioneller Fotoausrüstung kombiniert.",
+                    desc2: "Unsere Produkte werden in mehr als 50 Länder und Regionen weltweit exportiert und bieten globalen Kunden umfassende Bildlösungen aus einer Hand.",
+                    country: "Bediente Länder",
+                    partner: "Weltweite Partner",
+                    experience: "Jahre Erfahrung"
+                },
+                contact: {
+                    title: "Kontaktieren Sie Uns",
+                    subtitle: "Für Großbestellungen, Anpassungen oder andere Anfragen können Sie uns gerne kontaktieren"
+                },
+                footer: {
+                    copyright: "© 2024 PhotoPro. Alle Rechte vorbehalten. Anbieter von professioneller Bildausrüstung"
+                },
+                meta: {
+                    title: "PhotoPro | Professionelle Bildausrüstung & Service",
+                    desc: "Anbieter von professioneller Fotoausrüstung und Bilddienstleistungen, hochwertige Produkte für globale Kunden"
+                }
+            },
+            ar: {
+                nav: {
+                    home: "الرئيسية",
+                    products: "المنتجات",
+                    about: "من نحن",
+                    contact: "اتصل بنا",
+                    admin: "تسجيل دخول المدير"
+                },
+                banner: {
+                    title: "حلول التصوير الاحترافية للشركات العالمية",
+                    subtitle: "معدات تصوير عالية الجودة، خدمات تصوير مخصصة، شحن عالمي سريع، دعم ما بعد البيع موثوق",
+                    btn: "تصفح المنتجات"
+                },
+                products: {
+                    title: "منتجاتنا الأساسية",
+                    subtitle: "نقدم مجموعة كاملة من معدات التصوير والخدمات المخصصة للمصورين المحترفين والاستوديوهات والشركات",
+                    loading: "جاري تحميل المنتجات...",
+                    empty: "لا توجد منتجات بعد. يرجى تسجيل الدخول إلى لوحة التحكم لرفع المنتجات.",
+                    loadError: "فشل تحميل المنتجات. يرجى التحقق من إعدادات الخادم.",
+                    inquiryBtn: "اطلب استفسارًا"
+                },
+                about: {
+                    title: "من نحن PhotoPro",
+                    desc1: "بأكثر من 10 سنوات من الخبرة في صناعة التصوير، نحن مؤسسة شاملة تجمع بين البحث والتطوير والإنتاج وبيع معدات التصوير الاحترافية.",
+                    desc2: "يتم تصدير منتجاتنا إلى أكثر من 50 دولة ومنطقة حول العالم، ونقدم حلول تصوير متكاملة للعملاء العالميين.",
+                    country: "الدول التي نخدمها",
+                    partner: "الشركاء العالميون",
+                    experience: "سنوات الخبرة"
+                },
+                contact: {
+                    title: "اتصل بنا",
+                    subtitle: "للطلبات بالجملة، التخصيص، أو أي استفسارات، لا تتردد في الاتصال بنا"
+                },
+                footer: {
+                    copyright: "© 2024 PhotoPro. جميع الحقوق محفوظة. مورد معدات التصوير الاحترافية"
+                },
+                meta: {
+                    title: "PhotoPro | معدات وخدمات التصوير الاحترافية",
+                    desc: "مورد معدات التصوير وخدمات التصوير الاحترافية، منتجات عالية الجودة للعملاء العالميين"
+                }
+            },
+            es: {
+                nav: {
+                    home: "Inicio",
+                    products: "Productos",
+                    about: "Sobre Nosotros",
+                    contact: "Contacto",
+                    admin: "Inicio de Sesión Admin"
+                },
+                banner: {
+                    title: "Soluciones de Imagen Profesionales para Empresas Globales",
+                    subtitle: "Equipo fotográfico de alta calidad, servicios de imagen personalizados, envío global rápido, soporte postventa fiable",
+                    btn: "Ver Productos"
+                },
+                products: {
+                    title: "Nuestros Productos Principales",
+                    subtitle: "Ofrecemos una gama completa de equipos de imagen y servicios personalizados para fotógrafos profesionales, estudios y empresas",
+                    loading: "Cargando productos...",
+                    empty: "Aún no hay productos. Inicie sesión en el panel de administración para subir productos.",
+                    loadError: "No se pudieron cargar los productos. Compruebe la configuración del backend.",
+                    inquiryBtn: "Solicitar Presupuesto"
+                },
+                about: {
+                    title: "Sobre PhotoPro",
+                    desc1: "Con más de 10 años de experiencia en la industria de la imagen, somos una empresa integral que integra I+D, producción y venta de equipos fotográficos profesionales.",
+                    desc2: "Nuestros productos se exportan a más de 50 países y regiones de todo el mundo, ofreciendo soluciones de imagen integrales para clientes globales.",
+                    country: "Países Atendidos",
+                    partner: "Socios Globales",
+                    experience: "Años de Experiencia"
+                },
+                contact: {
+                    title: "Contáctenos",
+                    subtitle: "Para pedidos al por mayor, personalizaciones o cualquier consulta, no dude en contactarnos"
+                },
+                footer: {
+                    copyright: "© 2024 PhotoPro. Todos los Derechos Reservados. Proveedor de Equipos de Imagen Profesionales"
+                },
+                meta: {
+                    title: "PhotoPro | Equipo y Servicio de Imagen Profesional",
+                    desc: "Proveedor de equipos fotográficos y servicios de imagen profesionales, productos de alta calidad para clientes globales"
+                }
+            },
+            it: {
+                nav: {
+                    home: "Home",
+                    products: "Prodotti",
+                    about: "Chi Siamo",
+                    contact: "Contatti",
+                    admin: "Accesso Admin"
+                },
+                banner: {
+                    title: "Soluzioni di Imaging Professionale per Imprese Globali",
+                    subtitle: "Attrezzatura fotografica di alta qualità, servizi di imaging personalizzati, spedizione globale veloce, assistenza post-vendita affidabile",
+                    btn: "Sfoglia i Prodotti"
+                },
+                products: {
+                    title: "I Nostri Prodotti Principali",
+                    subtitle: "Offriamo una gamma completa di attrezzature per l'imaging e servizi personalizzati per fotografi professionisti, studi e imprese",
+                    loading: "Caricamento prodotti...",
+                    empty: "Nessun prodotto ancora. Effettua il login nell'area admin per caricare i prodotti.",
+                    loadError: "Impossibile caricare i prodotti. Controlla la configurazione del backend.",
+                    inquiryBtn: "Richiedi Informazioni"
+                },
+                about: {
+                    title: "Chi Siamo PhotoPro",
+                    desc1: "Con oltre 10 anni di esperienza nel settore dell'imaging, siamo un'impresa integrata che unisce R&S, produzione e vendita di attrezzature fotografiche professionali.",
+                    desc2: "I nostri prodotti sono esportati in più di 50 paesi e regioni in tutto il mondo, fornendo soluzioni di imaging complete per clienti globali.",
+                    country: "Paesi Serviti",
+                    partner: "Partner Globali",
+                    experience: "Anni di Esperienza"
+                },
+                contact: {
+                    title: "Contattaci",
+                    subtitle: "Per ordini all'ingrosso, personalizzazioni o qualsiasi domanda, non esitare a contattarci"
+                },
+                footer: {
+                    copyright: "© 2024 PhotoPro. Tutti i Diritti Riservati. Fornitore di Attrezzature per l'Imaging Professionale"
+                },
+                meta: {
+                    title: "PhotoPro | Attrezzatura e Servizio di Imaging Professionale",
+                    desc: "Fornitore di attrezzature fotografiche e servizi di imaging professionali, prodotti di alta qualità per clienti globali"
+                }
+            }
+        };
+
+        // 全局变量
+        let currentLang = 'en';
+        let globalProducts = [];
+
+        // 初始化语言
+        function initLang() {
+            // 从URL参数或localStorage获取语言偏好
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            const savedLang = localStorage.getItem('preferred_lang');
+            
+            currentLang = urlLang || savedLang || 'en';
+            // 校验语言是否在支持列表内
+            if (!langPack[currentLang]) currentLang = 'en';
+            
+            // 设置下拉框选中状态
+            document.getElementById('lang-select').value = currentLang;
+            // 应用语言
+            applyLang();
+            // 应用RTL布局
+            applyRTL();
+        }
+
+        // 应用语言到页面
+        function applyLang() {
+            // 替换所有带data-lang属性的文本
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                const keys = el.getAttribute('data-lang').split('.');
+                let text = langPack[currentLang];
+                for (const key of keys) {
+                    text = text[key];
+                    if (!text) break;
+                }
+                if (text) el.textContent = text;
+            });
+
+            // 更新meta标签和标题
+            document.getElementById('page-title').textContent = langPack[currentLang].meta.title;
+            document.getElementById('meta-desc').setAttribute('content', langPack[currentLang].meta.desc);
+
+            // 重新渲染产品（适配当前语言）
+            renderProducts();
+
+            // 保存语言偏好
+            localStorage.setItem('preferred_lang', currentLang);
+        }
+
+        // 应用RTL布局（阿拉伯语专属）
+        function applyRTL() {
+            const html = document.documentElement;
+            if (currentLang === 'ar') {
+                html.setAttribute('dir', 'rtl');
+                html.setAttribute('lang', 'ar');
+                // 调整文本对齐
+                document.querySelectorAll('.text-left').forEach(el => {
+                    el.classList.remove('text-left');
+                    el.classList.add('text-right');
+                });
+            } else {
+                html.setAttribute('dir', 'ltr');
+                html.setAttribute('lang', currentLang);
+                // 恢复文本对齐
+                document.querySelectorAll('.text-right').forEach(el => {
+                    el.classList.remove('text-right');
+                    el.classList.add('text-left');
+                });
+            }
+        }
+
+        // 渲染产品列表（多语言适配）
+        function renderProducts() {
+            const productGrid = document.getElementById('product-grid');
+            const loadingText = document.getElementById('loading-text');
+            
+            if (!globalProducts || globalProducts.length === 0) {
+                if (loadingText) {
+                    loadingText.textContent = langPack[currentLang].products.empty;
+                }
+                return;
+            }
+
+            // 清空网格
+            productGrid.innerHTML = '';
+
+            // 渲染每个产品
+            globalProducts.forEach(product => {
+                // 获取当前语言的名称和描述，为空则用英语兜底
+                const name = product[`name_${currentLang}`] || product.name_en;
+                const description = product[`description_${currentLang}`] || product.description_en;
+
+                const productCard = document.createElement('div');
+                productCard.className = 'bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow';
+                productCard.innerHTML = `
+                    <img src="${product.image_url}" alt="${name}" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">${name}</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">${description}</p>
+                        <p class="text-2xl font-bold text-blue-700 mb-4">$${product.price.toFixed(2)}</p>
+                        <a href="#contact" class="block w-full bg-blue-700 text-white text-center py-2 rounded-md hover:bg-blue-800 transition">${langPack[currentLang].products.inquiryBtn}</a>
+                    </div>
+                `;
+                productGrid.appendChild(productCard);
+            });
+        }
+
+        // 加载产品数据
+        async function loadProducts() {
             const productGrid = document.getElementById('product-grid');
             const loadingText = document.getElementById('loading-text');
             
@@ -117,33 +507,38 @@
                 const response = await fetch('/api/products');
                 if (!response.ok) throw new Error('API request failed');
                 
-                const products = await response.json();
+                globalProducts = await response.json();
                 loadingText.remove();
-
-                if (products.length === 0) {
-                    productGrid.innerHTML = '<div class="col-span-full text-center text-gray-500 py-12">No products yet. Please log in to the admin backend to upload products.</div>';
-                    return;
-                }
-
-                products.forEach(product => {
-                    const productCard = document.createElement('div');
-                    productCard.className = 'bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow';
-                    productCard.innerHTML = `
-                        <img src="${product.image_url}" alt="${product.name}" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">${product.name}</h3>
-                            <p class="text-gray-600 mb-4 line-clamp-3">${product.description}</p>
-                            <p class="text-2xl font-bold text-blue-700 mb-4">$${product.price.toFixed(2)}</p>
-                            <a href="#contact" class="block w-full bg-blue-700 text-white text-center py-2 rounded-md hover:bg-blue-800 transition">Inquiry Now</a>
-                        </div>
-                    `;
-                    productGrid.appendChild(productCard);
-                });
+                renderProducts();
 
             } catch (error) {
-                loadingText.textContent = 'Failed to load products. Please check the backend configuration.';
+                if (loadingText) {
+                    loadingText.textContent = langPack[currentLang].products.loadError;
+                }
                 console.error('Product load error:', error);
             }
+        }
+
+        // 语言切换事件
+        document.getElementById('lang-select').addEventListener('change', (e) => {
+            currentLang = e.target.value;
+            applyLang();
+            applyRTL();
+            // 更新URL参数（不刷新页面）
+            const url = new URL(window.location);
+            url.searchParams.set('lang', currentLang);
+            window.history.pushState({}, '', url);
+        });
+
+        // 页面初始化
+        window.addEventListener('DOMContentLoaded', () => {
+            initLang();
+            loadProducts();
+        });
+
+        // 浏览器前进后退适配语言
+        window.addEventListener('popstate', () => {
+            initLang();
         });
     </script>
 </body>
