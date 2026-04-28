@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 多语言SEO谷歌收录配置 -->
+    <!-- 多语言谷歌SEO配置，替换成你的Pages域名 -->
     <link rel="alternate" hreflang="en" href="https://YOUR-PAGES-DOMAIN.pages.dev" />
     <link rel="alternate" hreflang="fr" href="https://YOUR-PAGES-DOMAIN.pages.dev?lang=fr" />
     <link rel="alternate" hreflang="de" href="https://YOUR-PAGES-DOMAIN.pages.dev?lang=de" />
@@ -11,9 +11,10 @@
     <link rel="alternate" hreflang="es" href="https://YOUR-PAGES-DOMAIN.pages.dev?lang=es" />
     <link rel="alternate" hreflang="it" href="https://YOUR-PAGES-DOMAIN.pages.dev?lang=it" />
     <link rel="alternate" hreflang="x-default" href="https://YOUR-PAGES-DOMAIN.pages.dev" />
-    <!-- 多语言meta标签（动态更新） -->
-    <meta name="description" content="Professional Photo Equipment & Imaging Service Provider, High-quality products for global clients" id="meta-desc">
-    <title id="page-title">PhotoPro | Professional Imaging Equipment & Service</title>
+    <!-- 动态更新的meta标签 -->
+    <meta name="description" content="LeadTech - Advanced Camera Modules & Imaging Solutions, Design & Manufacturing for Global Clients" id="meta-desc">
+    <title id="page-title">LeadTech | Advanced Camera Modules & Imaging Solutions</title>
+    <!-- 引入样式 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Tailwind RTL适配配置 -->
@@ -38,11 +39,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0">
-                    <h1 class="text-2xl font-bold text-blue-700">PhotoPro</h1>
+                    <!-- 公司Logo -->
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/075f2cda90a14e59bce5e8e1c4e26558.jpg~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=20260426203924AE1959F3FE75F2BB1AC7&rrcfp=dafada99&x-expires=2093431164&x-signature=Eysr%2Bk6%2BZ%2BoFx3tudTS8omIhXd4%3D" alt="LeadTech Logo" class="h-10">
                 </div>
                 <div class="hidden md:flex space-x-8 rtl:space-x-reverse" id="nav-menu">
                     <a href="#home" class="text-gray-700 hover:text-blue-700 font-medium" data-lang="nav.home">Home</a>
                     <a href="#products" class="text-gray-700 hover:text-blue-700 font-medium" data-lang="nav.products">Products</a>
+                    <a href="#facility" class="text-gray-700 hover:text-blue-700 font-medium" data-lang="nav.facility">Factory Facility</a>
                     <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium" data-lang="nav.about">About Us</a>
                     <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium" data-lang="nav.contact">Contact</a>
                 </div>
@@ -68,8 +71,8 @@
     <section id="home" class="pt-24 pb-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="text-center">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6" data-lang="banner.title">Professional Imaging Solutions For Global Business</h2>
-                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto" data-lang="banner.subtitle">High-quality photo equipment, custom imaging services, fast global shipping, reliable after-sales support</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6" data-lang="banner.title">Advanced Camera Modules & Imaging Solutions</h2>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto" data-lang="banner.subtitle">Customized Design & Manufacturing for Consumer Electronics, Automotive, Smart Home & Industrial Vision</p>
                 <a href="#products" class="bg-white text-blue-700 px-8 py-3 rounded-md font-bold text-lg hover:bg-gray-100 transition" data-lang="banner.btn">Browse Products</a>
             </div>
         </div>
@@ -80,10 +83,97 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4" data-lang="products.title">Our Core Products</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto" data-lang="products.subtitle">We provide a full range of imaging equipment and customized services for professional photographers, studios, and enterprises</p>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-lang="products.subtitle">Comprehensive range of high-performance camera modules for global applications</p>
             </div>
             <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <div class="col-span-full text-center text-gray-500 py-12" id="loading-text" data-lang="products.loading">Loading products...</div>
+                <!-- 静态产品列表（适配多语言） -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/b69f9095c36a462a82a87c8cbbe98aa7.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=PougqEg7Multn5JILgStjWisDNk%3D" alt="AF Camera Module" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2" data-lang="products.af">AF Camera Module</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3" data-lang="products.af_desc">Auto-focus camera module for high-precision imaging applications</p>
+                        <a href="#contact" class="block w-full bg-blue-700 text-white text-center py-2 rounded-md hover:bg-blue-800 transition" data-lang="products.inquiryBtn">Inquiry Now</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/b69f9095c36a462a82a87c8cbbe98aa7.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=PougqEg7Multn5JILgStjWisDNk%3D" alt="Dash Cam Module" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2" data-lang="products.dashcam">Dash Cam Module</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3" data-lang="products.dashcam_desc">High-performance camera module for vehicle driving record systems</p>
+                        <a href="#contact" class="block w-full bg-blue-700 text-white text-center py-2 rounded-md hover:bg-blue-800 transition" data-lang="products.inquiryBtn">Inquiry Now</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/b69f9095c36a462a82a87c8cbbe98aa7.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=PougqEg7Multn5JILgStjWisDNk%3D" alt="Fingerprint Recognition Module" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2" data-lang="products.fingerprint">Fingerprint Recognition Module</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3" data-lang="products.fingerprint_desc">Integrated camera module with fingerprint identification function</p>
+                        <a href="#contact" class="block w-full bg-blue-700 text-white text-center py-2 rounded-md hover:bg-blue-800 transition" data-lang="products.inquiryBtn">Inquiry Now</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/b69f9095c36a462a82a87c8cbbe98aa7.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=PougqEg7Multn5JILgStjWisDNk%3D" alt="USB Module" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2" data-lang="products.usb">USB Camera Module</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3" data-lang="products.usb_desc">Plug-and-play USB camera module for laptops and industrial devices</p>
+                        <a href="#contact" class="block w-full bg-blue-700 text-white text-center py-2 rounded-md hover:bg-blue-800 transition" data-lang="products.inquiryBtn">Inquiry Now</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/b69f9095c36a462a82a87c8cbbe98aa7.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=PougqEg7Multn5JILgStjWisDNk%3D" alt="Binocular Module" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2" data-lang="products.binocular">Binocular Camera Module</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3" data-lang="products.binocular_desc">Dual-lens camera module for 3D vision and depth sensing applications</p>
+                        <a href="#contact" class="block w-full bg-blue-700 text-white text-center py-2 rounded-md hover:bg-blue-800 transition" data-lang="products.inquiryBtn">Inquiry Now</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/b69f9095c36a462a82a87c8cbbe98aa7.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=PougqEg7Multn5JILgStjWisDNk%3D" alt="Drone Camera Module" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2" data-lang="products.drone">Drone Camera Module</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3" data-lang="products.drone_desc">Lightweight high-resolution camera module for UAV applications</p>
+                        <a href="#contact" class="block w-full bg-blue-700 text-white text-center py-2 rounded-md hover:bg-blue-800 transition" data-lang="products.inquiryBtn">Inquiry Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工厂设施 -->
+    <section id="facility" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-lang="facility.title">Factory Facility & Equipment</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-lang="facility.subtitle">Class-leading production environment and advanced manufacturing equipment</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-industry text-4xl text-blue-700 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3" data-lang="facility.cleanroom">Cleanroom Environment</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i><span data-lang="facility.clean1">Class 10 & Class 100 Cleanrooms</span></li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i><span data-lang="facility.clean2">Class 1000 Clean Workshop</span></li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i><span data-lang="facility.clean3">Class 100 Clean Workbench</span></li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-cogs text-4xl text-blue-700 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3" data-lang="facility.production">Production Lines</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i><span data-lang="facility.line1">7 CCM Production Lines</span></li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i><span data-lang="facility.line2">3 JUKI (2070) SMT Lines</span></li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i><span data-lang="facility.line3">1 Jintuo 8-Zone Reflow Oven</span></li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-flask text-4xl text-blue-700 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3" data-lang="facility.testing">Testing Equipment</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i><span data-lang="facility.test1">30 Testing Light Boxes</span></li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i><span data-lang="facility.test2">6-slot Ultrasonic Cleaning Equipment</span></li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i><span data-lang="facility.test3">Automatic Pure Water Regeneration System</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -91,22 +181,24 @@
     <!-- 关于我们 -->
     <section id="about" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6" data-lang="about.title">About PhotoPro</h2>
-                <p class="text-gray-600 mb-4 text-lg" data-lang="about.desc1">With over 10 years of experience in the imaging industry, we are a comprehensive enterprise integrating R&D, production, and sales of professional photo equipment.</p>
-                <p class="text-gray-600 mb-8 text-lg" data-lang="about.desc2">Our products are exported to more than 50 countries and regions around the world, providing one-stop imaging solutions for global clients.</p>
-                <div class="grid grid-cols-3 gap-4 text-center">
-                    <div>
-                        <h3 class="text-3xl font-bold text-blue-700 mb-2">50+</h3>
-                        <p class="text-gray-600" data-lang="about.country">Countries Served</p>
-                    </div>
-                    <div>
-                        <h3 class="text-3xl font-bold text-blue-700 mb-2">1000+</h3>
-                        <p class="text-gray-600" data-lang="about.partner">Global Partners</p>
-                    </div>
-                    <div>
-                        <h3 class="text-3xl font-bold text-blue-700 mb-2">10+</h3>
-                        <p class="text-gray-600" data-lang="about.experience">Years Experience</p>
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center" data-lang="about.title">About LeadTech</h2>
+                <div class="prose prose-lg text-gray-600 mx-auto">
+                    <p data-lang="about.desc1">LeadTech specializes in the design and manufacturing of advanced cameras modules and imaging solutions.</p>
+                    <p data-lang="about.desc2">With strong R&D capabilities and well-established production facilities, the company delivers reliable, high-performance products for applications including consumer electronics, automotive systems, smart home devices, and industrial vision.</p>
+                    <p data-lang="about.desc3">Equipped with Class 10 and Class 100 cleanrooms, automated production lines, and comprehensive testing and calibration systems, we ensure consistent quality and fast delivery for global customers.</p>
+                    <p data-lang="about.desc4">We are committed to providing customized solutions, competitive pricing, and long-term partnership support.</p>
+                </div>
+                <!-- 客户展示 -->
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center" data-lang="about.clients">Our Clients</h3>
+                    <div class="grid grid-cols-4 md:grid-cols-6 gap-4 items-center justify-items-center">
+                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/fd60889842ec4f6c98ba4678eeb98783.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=dkOzjHZkE0ChcWDQsusAs9fmD3c%3D" alt="Client Logo" class="h-12 object-contain">
+                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/fd60889842ec4f6c98ba4678eeb98783.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=dkOzjHZkE0ChcWDQsusAs9fmD3c%3D" alt="Client Logo" class="h-12 object-contain">
+                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/fd60889842ec4f6c98ba4678eeb98783.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=dkOzjHZkE0ChcWDQsusAs9fmD3c%3D" alt="Client Logo" class="h-12 object-contain">
+                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/fd60889842ec4f6c98ba4678eeb98783.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=dkOzjHZkE0ChcWDQsusAs9fmD3c%3D" alt="Client Logo" class="h-12 object-contain">
+                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/fd60889842ec4f6c98ba4678eeb98783.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=dkOzjHZkE0ChcWDQsusAs9fmD3c%3D" alt="Client Logo" class="h-12 object-contain">
+                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/fd60889842ec4f6c98ba4678eeb98783.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260428152716036A49D3846A60488874&rrcfp=8a172a1a&x-expires=1777966037&x-signature=dkOzjHZkE0ChcWDQsusAs9fmD3c%3D" alt="Client Logo" class="h-12 object-contain">
                     </div>
                 </div>
             </div>
@@ -120,16 +212,44 @@
                 <h2 class="text-3xl font-bold text-gray-900 mb-4" data-lang="contact.title">Contact Us</h2>
                 <p class="text-gray-600" data-lang="contact.subtitle">For bulk orders, customization, or any inquiries, please feel free to contact us</p>
             </div>
-            <div class="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-envelope text-3xl text-blue-700 mb-4"></i>
-                    <h3 class="font-bold text-lg mb-2">Email</h3>
-                    <p class="text-gray-600">sales@photopro.com</p>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 联系方式 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-6 text-center" data-lang="contact.info">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-700 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900" data-lang="contact.email">Email</h4>
+                                <p class="text-gray-600">marie.t@homeyoutdoor.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-blue-700 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900" data-lang="contact.whatsapp">WhatsApp</h4>
+                                <p class="text-gray-600">+86 15919706381</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-phone text-3xl text-blue-700 mb-4"></i>
-                    <h3 class="font-bold text-lg mb-2">WhatsApp</h3>
-                    <p class="text-gray-600">+86 123 4567 8910</p>
+                <!-- 地址信息 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-6 text-center" data-lang="contact.address">Our Address</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-gray-900" data-lang="contact.europe">Europe Branch</h4>
+                            <p class="text-gray-600">Technologiezentrum am Europaplatz, Dennewartstraße 25, 52068 Aachen, Germany</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900" data-lang="contact.china_office">China Office</h4>
+                            <p class="text-gray-600">Rm 119, Bldg 1, Bandao Yuan, 2 Bulong Rd, Buji, Longgang, Shenzhen, China</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900" data-lang="contact.factory">Factory</h4>
+                            <p class="text-gray-600">Workshop 3-1, Xietong Ind. Park, Chaofeng Sub-dist, Qingzhen, Guiyang, Guizhou, China</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,258 +258,72 @@
     <!-- 页脚 -->
     <footer class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p data-lang="footer.copyright">© 2024 PhotoPro. All Rights Reserved. Professional Imaging Equipment Supplier</p>
+            <p data-lang="footer.copyright">© 2024 LeadTech Solution GmbH. All Rights Reserved. Advanced Camera Modules & Imaging Solutions Provider</p>
         </div>
     </footer>
 
-    <!-- 6语种语言包 -->
+    <!-- 6语种完整语言包 -->
     <script>
         const langPack = {
             en: {
-                nav: {
-                    home: "Home",
-                    products: "Products",
-                    about: "About Us",
-                    contact: "Contact",
-                    admin: "Admin Login"
-                },
-                banner: {
-                    title: "Professional Imaging Solutions For Global Business",
-                    subtitle: "High-quality photo equipment, custom imaging services, fast global shipping, reliable after-sales support",
-                    btn: "Browse Products"
-                },
-                products: {
-                    title: "Our Core Products",
-                    subtitle: "We provide a full range of imaging equipment and customized services for professional photographers, studios, and enterprises",
-                    loading: "Loading products...",
-                    empty: "No products yet. Please log in to the admin backend to upload products.",
-                    loadError: "Failed to load products. Please check the backend configuration.",
-                    inquiryBtn: "Inquiry Now"
-                },
-                about: {
-                    title: "About PhotoPro",
-                    desc1: "With over 10 years of experience in the imaging industry, we are a comprehensive enterprise integrating R&D, production, and sales of professional photo equipment.",
-                    desc2: "Our products are exported to more than 50 countries and regions around the world, providing one-stop imaging solutions for global clients.",
-                    country: "Countries Served",
-                    partner: "Global Partners",
-                    experience: "Years Experience"
-                },
-                contact: {
-                    title: "Contact Us",
-                    subtitle: "For bulk orders, customization, or any inquiries, please feel free to contact us"
-                },
-                footer: {
-                    copyright: "© 2024 PhotoPro. All Rights Reserved. Professional Imaging Equipment Supplier"
-                },
-                meta: {
-                    title: "PhotoPro | Professional Imaging Equipment & Service",
-                    desc: "Professional Photo Equipment & Imaging Service Provider, High-quality products for global clients"
-                }
+                nav: { home: "Home", products: "Products", facility: "Factory Facility", about: "About Us", contact: "Contact", admin: "Admin Login" },
+                banner: { title: "Advanced Camera Modules & Imaging Solutions", subtitle: "Customized Design & Manufacturing for Consumer Electronics, Automotive, Smart Home & Industrial Vision", btn: "Browse Products" },
+                products: { title: "Our Core Products", subtitle: "Comprehensive range of high-performance camera modules for global applications", inquiryBtn: "Inquiry Now", af: "AF Camera Module", af_desc: "Auto-focus camera module for high-precision imaging applications", dashcam: "Dash Cam Module", dashcam_desc: "High-performance camera module for vehicle driving record systems", fingerprint: "Fingerprint Recognition Module", fingerprint_desc: "Integrated camera module with fingerprint identification function", usb: "USB Camera Module", usb_desc: "Plug-and-play USB camera module for laptops and industrial devices", binocular: "Binocular Camera Module", binocular_desc: "Dual-lens camera module for 3D vision and depth sensing applications", drone: "Drone Camera Module", drone_desc: "Lightweight high-resolution camera module for UAV applications" },
+                facility: { title: "Factory Facility & Equipment", subtitle: "Class-leading production environment and advanced manufacturing equipment", cleanroom: "Cleanroom Environment", clean1: "Class 10 & Class 100 Cleanrooms", clean2: "Class 1000 Clean Workshop", clean3: "Class 100 Clean Workbench", production: "Production Lines", line1: "7 CCM Production Lines", line2: "3 JUKI (2070) SMT Lines", line3: "1 Jintuo 8-Zone Reflow Oven", testing: "Testing Equipment", test1: "30 Testing Light Boxes", test2: "6-slot Ultrasonic Cleaning Equipment", test3: "Automatic Pure Water Regeneration System" },
+                about: { title: "About LeadTech", desc1: "LeadTech specializes in the design and manufacturing of advanced cameras modules and imaging solutions.", desc2: "With strong R&D capabilities and well-established production facilities, the company delivers reliable, high-performance products for applications including consumer electronics, automotive systems, smart home devices, and industrial vision.", desc3: "Equipped with Class 10 and Class 100 cleanrooms, automated production lines, and comprehensive testing and calibration systems, we ensure consistent quality and fast delivery for global customers.", desc4: "We are committed to providing customized solutions, competitive pricing, and long-term partnership support.", clients: "Our Clients" },
+                contact: { title: "Contact Us", subtitle: "For bulk orders, customization, or any inquiries, please feel free to contact us", info: "Contact Information", email: "Email", whatsapp: "WhatsApp", address: "Our Address", europe: "Europe Branch", china_office: "China Office", factory: "Factory" },
+                footer: { copyright: "© 2024 LeadTech Solution GmbH. All Rights Reserved. Advanced Camera Modules & Imaging Solutions Provider" },
+                meta: { title: "LeadTech | Advanced Camera Modules & Imaging Solutions", desc: "LeadTech - Advanced Camera Modules & Imaging Solutions, Design & Manufacturing for Global Clients" }
             },
             fr: {
-                nav: {
-                    home: "Accueil",
-                    products: "Produits",
-                    about: "À Propos",
-                    contact: "Contact",
-                    admin: "Connexion Admin"
-                },
-                banner: {
-                    title: "Solutions d'Imagerie Professionnelles pour les Entreprises Mondiales",
-                    subtitle: "Équipement photo de haute qualité, services d'imagerie personnalisés, livraison mondiale rapide, support après-vente fiable",
-                    btn: "Voir les Produits"
-                },
-                products: {
-                    title: "Nos Produits Principaux",
-                    subtitle: "Nous proposons une gamme complète d'équipements d'imagerie et de services personnalisés pour les photographes professionnels, les studios et les entreprises",
-                    loading: "Chargement des produits...",
-                    empty: "Aucun produit pour le moment. Veuillez vous connecter à l'interface d'administration pour télécharger des produits.",
-                    loadError: "Échec du chargement des produits. Veuillez vérifier la configuration du backend.",
-                    inquiryBtn: "Demander un Devis"
-                },
-                about: {
-                    title: "À Propos de PhotoPro",
-                    desc1: "Avec plus de 10 ans d'expérience dans l'industrie de l'imagerie, nous sommes une entreprise intégrée regroupant la R&D, la production et la vente d'équipements photo professionnels.",
-                    desc2: "Nos produits sont exportés dans plus de 50 pays et régions du monde, offrant des solutions d'imagerie clé en main pour les clients du monde entier.",
-                    country: "Pays Desservis",
-                    partner: "Partenaires Mondiaux",
-                    experience: "Années d'Expérience"
-                },
-                contact: {
-                    title: "Contactez-Nous",
-                    subtitle: "Pour les commandes en gros, la personnalisation ou toute demande, n'hésitez pas à nous contacter"
-                },
-                footer: {
-                    copyright: "© 2024 PhotoPro. Tous Droits Réservés. Fournisseur d'Équipements d'Imagerie Professionnels"
-                },
-                meta: {
-                    title: "PhotoPro | Équipement et Service d'Imagerie Professionnels",
-                    desc: "Fournisseur d'équipements photo et de services d'imagerie professionnels, produits de haute qualité pour les clients du monde entier"
-                }
+                nav: { home: "Accueil", products: "Produits", facility: "Installations de l'Usine", about: "À Propos", contact: "Contact", admin: "Connexion Admin" },
+                banner: { title: "Modules de Caméra Avancés et Solutions d'Imagerie", subtitle: "Conception et Fabrication Personnalisées pour l'Électronique Grand Public, l'Automobile, la Maison Intelligente et la Vision Industrielle", btn: "Voir les Produits" },
+                products: { title: "Nos Produits Principaux", subtitle: "Gamme complète de modules de caméra haute performance pour des applications mondiales", inquiryBtn: "Demander un Devis", af: "Module de Caméra AF", af_desc: "Module de caméra à mise au point automatique pour des applications d'imagerie haute précision", dashcam: "Module de Caméra de Recul", dashcam_desc: "Module de caméra haute performance pour les systèmes d'enregistrement de conduite véhiculaire", fingerprint: "Module de Reconnaissance d'Empreintes Digitales", fingerprint_desc: "Module de caméra intégré avec fonction d'identification d'empreintes digitales", usb: "Module de Caméra USB", usb_desc: "Module de caméra USB brancher et utiliser pour ordinateurs portables et appareils industriels", binocular: "Module de Caméra Binoculaire", binocular_desc: "Module de caméra à double objectif pour des applications de vision 3D et de détection de profondeur", drone: "Module de Caméra pour Drone", drone_desc: "Module de caméra haute résolution léger pour des applications de drone" },
+                facility: { title: "Installations et Équipements de l'Usine", subtitle: "Environnement de production de classe leader et équipements de fabrication avancés", cleanroom: "Environnement de Salle Blanche", clean1: "Salles Blanches Classe 10 et Classe 100", clean2: "Atelier de Salle Blanche Classe 1000", clean3: "Bureau de Travail de Salle Blanche Classe 100", production: "Lignes de Production", line1: "7 Lignes de Production CCM", line2: "3 Lignes SMT JUKI (2070)", line3: "1 Four à Reflux Jintuo 8 Zones", testing: "Équipements de Test", test1: "30 Boîtes Lumière de Test", test2: "Équipement de Nettoyage Ultrasonique 6 Fentes", test3: "Système Automatique de Régénération d'Eau Pure" },
+                about: { title: "À Propos de LeadTech", desc1: "LeadTech est spécialisée dans la conception et la fabrication de modules de caméra avancés et de solutions d'imagerie.", desc2: "Dotée de solides capacités de R&D et d'installations de production bien établies, l'entreprise fournit des produits fiables et haute performance pour des applications incluant l'électronique grand public, les systèmes automobiles, les dispositifs domotiques et la vision industrielle.", desc3: "Équipée de salles blanches de classe 10 et 100, de lignes de production automatisées et de systèmes complets de test et d'étalonnage, nous assurons une qualité constante et une livraison rapide pour nos clients mondiaux.", desc4: "Nous nous engageons à fournir des solutions personnalisées, des prix compétitifs et un soutien de partenariat à long terme.", clients: "Nos Clients" },
+                contact: { title: "Contactez-Nous", subtitle: "Pour les commandes en gros, la personnalisation ou toute demande, n'hésitez pas à nous contacter", info: "Informations de Contact", email: "Email", whatsapp: "WhatsApp", address: "Notre Adresse", europe: "Succursale Européenne", china_office: "Bureau en Chine", factory: "Usine" },
+                footer: { copyright: "© 2024 LeadTech Solution GmbH. Tous Droits Réservés. Fournisseur de Modules de Caméra Avancés et de Solutions d'Imagerie" },
+                meta: { title: "LeadTech | Modules de Caméra Avancés et Solutions d'Imagerie", desc: "LeadTech - Modules de Caméra Avancés et Solutions d'Imagerie, Conception et Fabrication pour Clients Mondiaux" }
             },
             de: {
-                nav: {
-                    home: "Startseite",
-                    products: "Produkte",
-                    about: "Über Uns",
-                    contact: "Kontakt",
-                    admin: "Admin Login"
-                },
-                banner: {
-                    title: "Professionelle Bildlösungen für Globale Unternehmen",
-                    subtitle: "Hochwertige Fotoausrüstung, maßgeschneiderte Bilddienstleistungen, schneller weltweiter Versand, zuverlässiger Kundendienst",
-                    btn: "Produkte Ansehen"
-                },
-                products: {
-                    title: "Unsere Kernprodukte",
-                    subtitle: "Wir bieten ein umfassendes Sortiment an Bildgeräten und maßgeschneiderten Dienstleistungen für professionelle Fotografen, Studios und Unternehmen",
-                    loading: "Produkte werden geladen...",
-                    empty: "Noch keine Produkte. Bitte melden Sie sich im Admin-Bereich an, um Produkte hochzuladen.",
-                    loadError: "Produkte konnten nicht geladen werden. Bitte überprüfen Sie die Backend-Konfiguration.",
-                    inquiryBtn: "Anfrage Senden"
-                },
-                about: {
-                    title: "Über PhotoPro",
-                    desc1: "Mit über 10 Jahren Erfahrung in der Bildbranche sind wir ein umfassendes Unternehmen, das Forschung, Entwicklung, Produktion und Vertrieb professioneller Fotoausrüstung kombiniert.",
-                    desc2: "Unsere Produkte werden in mehr als 50 Länder und Regionen weltweit exportiert und bieten globalen Kunden umfassende Bildlösungen aus einer Hand.",
-                    country: "Bediente Länder",
-                    partner: "Weltweite Partner",
-                    experience: "Jahre Erfahrung"
-                },
-                contact: {
-                    title: "Kontaktieren Sie Uns",
-                    subtitle: "Für Großbestellungen, Anpassungen oder andere Anfragen können Sie uns gerne kontaktieren"
-                },
-                footer: {
-                    copyright: "© 2024 PhotoPro. Alle Rechte vorbehalten. Anbieter von professioneller Bildausrüstung"
-                },
-                meta: {
-                    title: "PhotoPro | Professionelle Bildausrüstung & Service",
-                    desc: "Anbieter von professioneller Fotoausrüstung und Bilddienstleistungen, hochwertige Produkte für globale Kunden"
-                }
+                nav: { home: "Startseite", products: "Produkte", facility: "Werksanlagen", about: "Über Uns", contact: "Kontakt", admin: "Admin Login" },
+                banner: { title: "Fortgeschrittene Kameramodule und Bildverarbeitungslösungen", subtitle: "Maßgeschneidertes Design und Fertigung für Unterhaltungselektronik, Automobil, Smart Home und Industrielle Vision", btn: "Produkte Ansehen" },
+                products: { title: "Unsere Kernprodukte", subtitle: "Umfassende Palette leistungsstarker Kameramodule für globale Anwendungen", inquiryBtn: "Anfrage Senden", af: "AF-Kameramodul", af_desc: "Autofokus-Kameramodul für hochpräzise Bildverarbeitungsanwendungen", dashcam: "Dashcam-Modul", dashcam_desc: "Leistungsstarkes Kameramodul für Fahrzeugfahrzeugrekordersysteme", fingerprint: "Fingerabdruckerkennungsmodul", fingerprint_desc: "Integriertes Kameramodul mit Fingerabdruckidentifikationsfunktion", usb: "USB-Kameramodul", usb_desc: "Plug-and-Play USB-Kameramodul für Laptops und industrielle Geräte", binocular: "Binokulares Kameramodul", binocular_desc: "Doppelobjektiv-Kameramodul für 3D-Sicht- und Tiefenmessanwendungen", drone: "Drohnenkameramodul", drone_desc: "Leichtes Hochauflösungs-Kameramodul für UAV-Anwendungen" },
+                facility: { title: "Werksanlagen und Ausrüstungen", subtitle: "Branchenführende Produktionsumgebung und fortschrittliche Fertigungsausrüstung", cleanroom: "Reinraumumgebung", clean1: "Reinräume Klasse 10 und Klasse 100", clean2: "Reinraumwerkstatt Klasse 1000", clean3: "Reinraumarbeitsplatz Klasse 100", production: "Produktionslinien", line1: "7 CCM-Produktionslinien", line2: "3 JUKI (2070) SMT-Linien", line3: "1 neuer Jintuo-Ofen mit 8 Temperaturzonen", testing: "Testausrüstung", test1: "30 Testlichtkästen", test2: "6-Schlitz-Ultraschallreinigungsgerät", test3: "Automatisches Reinstwasserrecyclingsystem" },
+                about: { title: "Über LeadTech", desc1: "LeadTech spezialisiert sich auf die Entwicklung und Herstellung fortschrittlicher Kameramodule und Bildverarbeitungslösungen.", desc2: "Mit starken F&E-Kapazitäten und etablierten Produktionsanlagen liefert das Unternehmen zuverlässige, leistungsstarke Produkte für Anwendungen in der Unterhaltungselektronik, Automobilssystemen, Smart-Home-Geräten und industrieller Bildverarbeitung.", desc3: "Ausgestattet mit Reinräumen der Klasse 10 und 100, automatisierten Produktionslinien sowie umfassenden Test- und Kalibriersystemen gewährleisten wir konstante Qualität und schnelle Lieferung für globale Kunden.", desc4: "Wir verpflichten uns, maßgeschneiderte Lösungen, wettbewerbsfähige Preise und langfristige Partnerschaftsunterstützung zu bieten.", clients: "Unsere Kunden" },
+                contact: { title: "Kontaktieren Sie Uns", subtitle: "Für Großbestellungen, Anpassungen oder andere Anfragen können Sie uns gerne kontaktieren", info: "Kontaktinformationen", email: "E-Mail", whatsapp: "WhatsApp", address: "Unsere Adresse", europe: "Europäische Niederlassung", china_office: "Chinesisches Büro", factory: "Werk" },
+                footer: { copyright: "© 2024 LeadTech Solution GmbH. Alle Rechte vorbehalten. Anbieter von fortschrittlichen Kameramodulen und Bildverarbeitungslösungen" },
+                meta: { title: "LeadTech | Fortgeschrittene Kameramodule und Bildverarbeitungslösungen", desc: "LeadTech - Fortgeschrittene Kameramodule und Bildverarbeitungslösungen, Design und Fertigung für globale Kunden" }
             },
             ar: {
-                nav: {
-                    home: "الرئيسية",
-                    products: "المنتجات",
-                    about: "من نحن",
-                    contact: "اتصل بنا",
-                    admin: "تسجيل دخول المدير"
-                },
-                banner: {
-                    title: "حلول التصوير الاحترافية للشركات العالمية",
-                    subtitle: "معدات تصوير عالية الجودة، خدمات تصوير مخصصة، شحن عالمي سريع، دعم ما بعد البيع موثوق",
-                    btn: "تصفح المنتجات"
-                },
-                products: {
-                    title: "منتجاتنا الأساسية",
-                    subtitle: "نقدم مجموعة كاملة من معدات التصوير والخدمات المخصصة للمصورين المحترفين والاستوديوهات والشركات",
-                    loading: "جاري تحميل المنتجات...",
-                    empty: "لا توجد منتجات بعد. يرجى تسجيل الدخول إلى لوحة التحكم لرفع المنتجات.",
-                    loadError: "فشل تحميل المنتجات. يرجى التحقق من إعدادات الخادم.",
-                    inquiryBtn: "اطلب استفسارًا"
-                },
-                about: {
-                    title: "من نحن PhotoPro",
-                    desc1: "بأكثر من 10 سنوات من الخبرة في صناعة التصوير، نحن مؤسسة شاملة تجمع بين البحث والتطوير والإنتاج وبيع معدات التصوير الاحترافية.",
-                    desc2: "يتم تصدير منتجاتنا إلى أكثر من 50 دولة ومنطقة حول العالم، ونقدم حلول تصوير متكاملة للعملاء العالميين.",
-                    country: "الدول التي نخدمها",
-                    partner: "الشركاء العالميون",
-                    experience: "سنوات الخبرة"
-                },
-                contact: {
-                    title: "اتصل بنا",
-                    subtitle: "للطلبات بالجملة، التخصيص، أو أي استفسارات، لا تتردد في الاتصال بنا"
-                },
-                footer: {
-                    copyright: "© 2024 PhotoPro. جميع الحقوق محفوظة. مورد معدات التصوير الاحترافية"
-                },
-                meta: {
-                    title: "PhotoPro | معدات وخدمات التصوير الاحترافية",
-                    desc: "مورد معدات التصوير وخدمات التصوير الاحترافية، منتجات عالية الجودة للعملاء العالميين"
-                }
+                nav: { home: "الرئيسية", products: "المنتجات", facility: "مرافق المصنع", about: "من نحن", contact: "اتصل بنا", admin: "تسجيل دخول المدير" },
+                banner: { title: "وحدات الكاميرا المتقدمة وحلول التصوير", subtitle: "تصميم وتصنيع مخصصون للالكترونيات الاستهلاكية، السيارات، المنازل الذكية والرؤية الصناعية", btn: "تصفح المنتجات" },
+                products: { title: "منتجاتنا الأساسية", subtitle: "مجموعة شاملة من وحدات الكاميرا عالية الأداء للتطبيقات العالمية", inquiryBtn: "اطلب استفسارًا", af: "وحدة كاميرا AF", af_desc: "وحدة كاميرا ذات تركيز تلقائي للتطبيقات التصويرية عالية الدقة", dashcam: "وحدة كاميرا تسجيل السير", dashcam_desc: "وحدة كاميرا عالية الأداء لأنظمة تسجيل قيادة السيارات", fingerprint: "وحدة التعرف على بصمة الإصبع", fingerprint_desc: "وحدة كاميرا متكاملة مع وظيفة تحديد بصمة الإصبع", usb: "وحدة كاميرا USB", usb_desc: "وحدة كاميرا USB قابلة للربط والاستخدام لأجهزة الكمبيوتر المحمولة والأجهزة الصناعية", binocular: "وحدة كاميرا مزدوجة العين", binocular_desc: "وحدة كاميرا مزدوجة العدسة للتطبيقات الرؤية ثلاثية الأبعاد واستشعار العمق", drone: "وحدة كاميرا الطائرة بدون طيار", drone_desc: "وحدة كاميرا عالية الدقة خفيفة الوزن للتطبيقات الخاصة بالطائرات بدون طيار" },
+                facility: { title: "مرافق ومعدات المصنع", subtitle: "بيئة إنتاج رائدة في الفئة ومعدات تصنيع متقدمة", cleanroom: "بيئة الغرفة النظيفة", clean1: "غرف نظيفة من الفئة 10 والفئة 100", clean2: "ورشة عمل نظيفة من الفئة 1000", clean3: "طاولة عمل نظيفة من الفئة 100", production: "خطوط الإنتاج", line1: "7 خطوط إنتاج CCM", line2: "3 خطوط SMT JUKI (2070)", line3: "مفرن إعادة التدفق الجديد من Jintuo بـ 8 مناطق درجة حرارة", testing: "معدات الاختبار", test1: "30 صندوق ضوء اختبار", test2: "معدة تنظيف بالموجات فوق الصوتية بـ 6 فتحات", test3: "نظام تلقائي لإعادة توليد المياه النقية" },
+                about: { title: "من نحن LeadTech", desc1: "تتخصص LeadTech في تصميم وتصنيع وحدات الكاميرا المتقدمة وحلول التصوير.", desc2: "بفضل قدرات البحوث والتطوير القوية ومعدات الإنتاج المتأسسة جيدًا، توفر الشركة منتجات موثوقة وعالية الأداء للتطبيقات بما في ذلك الإلكترونيات الاستهلاكية، أنظمة السيارات، أجهزة المنزل الذكي والرؤية الصناعية.", desc3: "بمعدات الغرف النظيفة من الفئة 10 والفئة 100، وخطوط الإنتاج الآلية، ونظم الاختبار والتقويم الشاملة، نضمن جودة ثابتة وتسليم سريع للعملاء العالميين.", desc4: "نحن ملتزمون بتقديم حلول مخصصة، أسعار تنافسية، ودعم شراكة طويل الأجل.", clients: "عملاؤنا" },
+                contact: { title: "اتصل بنا", subtitle: "للطلبات بالجملة، التخصيص، أو أي استفسارات، لا تتردد في الاتصال بنا", info: "معلومات الاتصال", email: "البريد الإلكتروني", whatsapp: "واتساب", address: "عنواننا", europe: "فرع أوروبا", china_office: "مكتب الصين", factory: "المصنع" },
+                footer: { copyright: "© 2024 LeadTech Solution GmbH. جميع الحقوق محفوظة. موزع وحدات الكاميرا المتقدمة وحلول التصوير" },
+                meta: { title: "LeadTech | وحدات الكاميرا المتقدمة وحلول التصوير", desc: "LeadTech - وحدات الكاميرا المتقدمة وحلول التصوير، تصميم وتصنيع للعملاء العالميين" }
             },
             es: {
-                nav: {
-                    home: "Inicio",
-                    products: "Productos",
-                    about: "Sobre Nosotros",
-                    contact: "Contacto",
-                    admin: "Inicio de Sesión Admin"
-                },
-                banner: {
-                    title: "Soluciones de Imagen Profesionales para Empresas Globales",
-                    subtitle: "Equipo fotográfico de alta calidad, servicios de imagen personalizados, envío global rápido, soporte postventa fiable",
-                    btn: "Ver Productos"
-                },
-                products: {
-                    title: "Nuestros Productos Principales",
-                    subtitle: "Ofrecemos una gama completa de equipos de imagen y servicios personalizados para fotógrafos profesionales, estudios y empresas",
-                    loading: "Cargando productos...",
-                    empty: "Aún no hay productos. Inicie sesión en el panel de administración para subir productos.",
-                    loadError: "No se pudieron cargar los productos. Compruebe la configuración del backend.",
-                    inquiryBtn: "Solicitar Presupuesto"
-                },
-                about: {
-                    title: "Sobre PhotoPro",
-                    desc1: "Con más de 10 años de experiencia en la industria de la imagen, somos una empresa integral que integra I+D, producción y venta de equipos fotográficos profesionales.",
-                    desc2: "Nuestros productos se exportan a más de 50 países y regiones de todo el mundo, ofreciendo soluciones de imagen integrales para clientes globales.",
-                    country: "Países Atendidos",
-                    partner: "Socios Globales",
-                    experience: "Años de Experiencia"
-                },
-                contact: {
-                    title: "Contáctenos",
-                    subtitle: "Para pedidos al por mayor, personalizaciones o cualquier consulta, no dude en contactarnos"
-                },
-                footer: {
-                    copyright: "© 2024 PhotoPro. Todos los Derechos Reservados. Proveedor de Equipos de Imagen Profesionales"
-                },
-                meta: {
-                    title: "PhotoPro | Equipo y Servicio de Imagen Profesional",
-                    desc: "Proveedor de equipos fotográficos y servicios de imagen profesionales, productos de alta calidad para clientes globales"
-                }
+                nav: { home: "Inicio", products: "Productos", facility: "Instalaciones de la Fábrica", about: "Sobre Nosotros", contact: "Contacto", admin: "Inicio de Sesión Admin" },
+                banner: { title: "Módulos de Cámara Avanzados y Soluciones de Imagen", subtitle: "Diseño y Fabricación Personalizados para Electrónica de Consumo, Automoción, Hogar Inteligente y Visión Industrial", btn: "Ver Productos" },
+                products: { title: "Nuestros Productos Principales", subtitle: "Amplia gama de módulos de cámara de alto rendimiento para aplicaciones globales", inquiryBtn: "Solicitar Presupuesto", af: "Módulo de Cámara AF", af_desc: "Módulo de cámara con enfoque automático para aplicaciones de imagen de alta precisión", dashcam: "Módulo de Cámara de Salpicadero", dashcam_desc: "Módulo de cámara de alto rendimiento para sistemas de registro de conducción vehicular", fingerprint: "Módulo de Reconocimiento de Huellas Dactilares", fingerprint_desc: "Módulo de cámara integrado con función de identificación de huellas dactilares", usb: "Módulo de Cámara USB", usb_desc: "Módulo de cámara USB plug-and-play para portátiles y dispositivos industriales", binocular: "Módulo de Cámara Binocular", binocular_desc: "Módulo de cámara de doble objetivo para aplicaciones de visión 3D y detección de profundidad", drone: "Módulo de Cámara para Drone", drone_desc: "Módulo de cámara de alta resolución ligero para aplicaciones de UAV" },
+                facility: { title: "Instalaciones y Equipos de la Fábrica", subtitle: "Entorno de producción de clase líder y equipos de fabricación avanzados", cleanroom: "Entorno de Sala Limpia", clean1: "Salas Limpias Clase 10 y Clase 100", clean2: "Taller de Sala Limpia Clase 1000", clean3: "Mesa de Trabajo de Sala Limpia Clase 100", production: "Líneas de Producción", line1: "7 Líneas de Producción CCM", line2: "3 Líneas SMT JUKI (2070)", line3: "1 Horno de Reflujo Jintuo de 8 Zonas Térmicas Nuevo", testing: "Equipos de Prueba", test1: "30 Cajas de Luz de Prueba", test2: "Equipo de Limpieza Ultrasónica de 6 Ranuras", test3: "Sistema Automático de Regeneración de Agua Pura" },
+                about: { title: "Sobre LeadTech", desc1: "LeadTech se especializa en el diseño y fabricación de módulos de cámara avanzados y soluciones de imagen.", desc2: "Con sólidas capacidades de I+D e instalaciones de producción bien establecidas, la empresa ofrece productos fiables y de alto rendimiento para aplicaciones que incluyen electrónica de consumo, sistemas automotrices, dispositivos domésticos inteligentes y visión industrial.", desc3: "Equipada con salas limpias de clase 10 y 100, líneas de producción automatizadas y sistemas completos de prueba y calibración, garantizamos una calidad constante y una entrega rápida para clientes globales.", desc4: "Nos comprometemos a ofrecer soluciones personalizadas, precios competitivos y soporte de asociación a largo plazo.", clients: "Nuestros Clientes" },
+                contact: { title: "Contáctenos", subtitle: "Para pedidos al por mayor, personalizaciones o cualquier consulta, no dude en contactarnos", info: "Información de Contacto", email: "Correo Electrónico", whatsapp: "WhatsApp", address: "Nuestra Dirección", europe: "Sucursal Europea", china_office: "Oficina en China", factory: "Fábrica" },
+                footer: { copyright: "© 2024 LeadTech Solution GmbH. Todos los Derechos Reservados. Proveedor de Módulos de Cámara Avanzados y Soluciones de Imagen" },
+                meta: { title: "LeadTech | Módulos de Cámara Avanzados y Soluciones de Imagen", desc: "LeadTech - Módulos de Cámara Avanzados y Soluciones de Imagen, Diseño y Fabricación para Clientes Globales" }
             },
             it: {
-                nav: {
-                    home: "Home",
-                    products: "Prodotti",
-                    about: "Chi Siamo",
-                    contact: "Contatti",
-                    admin: "Accesso Admin"
-                },
-                banner: {
-                    title: "Soluzioni di Imaging Professionale per Imprese Globali",
-                    subtitle: "Attrezzatura fotografica di alta qualità, servizi di imaging personalizzati, spedizione globale veloce, assistenza post-vendita affidabile",
-                    btn: "Sfoglia i Prodotti"
-                },
-                products: {
-                    title: "I Nostri Prodotti Principali",
-                    subtitle: "Offriamo una gamma completa di attrezzature per l'imaging e servizi personalizzati per fotografi professionisti, studi e imprese",
-                    loading: "Caricamento prodotti...",
-                    empty: "Nessun prodotto ancora. Effettua il login nell'area admin per caricare i prodotti.",
-                    loadError: "Impossibile caricare i prodotti. Controlla la configurazione del backend.",
-                    inquiryBtn: "Richiedi Informazioni"
-                },
-                about: {
-                    title: "Chi Siamo PhotoPro",
-                    desc1: "Con oltre 10 anni di esperienza nel settore dell'imaging, siamo un'impresa integrata che unisce R&S, produzione e vendita di attrezzature fotografiche professionali.",
-                    desc2: "I nostri prodotti sono esportati in più di 50 paesi e regioni in tutto il mondo, fornendo soluzioni di imaging complete per clienti globali.",
-                    country: "Paesi Serviti",
-                    partner: "Partner Globali",
-                    experience: "Anni di Esperienza"
-                },
-                contact: {
-                    title: "Contattaci",
-                    subtitle: "Per ordini all'ingrosso, personalizzazioni o qualsiasi domanda, non esitare a contattarci"
-                },
-                footer: {
-                    copyright: "© 2024 PhotoPro. Tutti i Diritti Riservati. Fornitore di Attrezzature per l'Imaging Professionale"
-                },
-                meta: {
-                    title: "PhotoPro | Attrezzatura e Servizio di Imaging Professionale",
-                    desc: "Fornitore di attrezzature fotografiche e servizi di imaging professionali, prodotti di alta qualità per clienti globali"
-                }
+                nav: { home: "Home", products: "Prodotti", facility: "Impianti della Fabbrica", about: "Chi Siamo", contact: "Contatti", admin: "Accesso Admin" },
+                banner: { title: "Moduli di Fotocamera Avanzati e Soluzioni di Imaging", subtitle: "Design e Produzione Personalizzati per Elettronica di Consumo, Automobilismo, Smart Home e Visione Industriale", btn: "Sfoglia i Prodotti" },
+                products: { title: "I Nostri Prodotti Principali", subtitle: "Ampia gamma di moduli di fotocamera ad alte prestazioni per applicazioni globali", inquiryBtn: "Richiedi Informazioni", af: "Modulo di Fotocamera AF", af_desc: "Modulo di fotocamera con messa a fuoco automatica per applicazioni di imaging ad alta precisione", dashcam: "Modulo di Fotocamera per Dashcam", dashcam_desc: "Modulo di fotocamera ad alte prestazioni per sistemi di registrazione della guida veicolare", fingerprint: "Modulo di Riconoscimento delle Impronte Digitali", fingerprint_desc: "Modulo di fotocamera integrato con funzione di identificazione delle impronte digitali", usb: "Modulo di Fotocamera USB", usb_desc: "Modulo di fotocamera USB plug-and-play per laptop e dispositivi industriali", binocular: "Modulo di Fotocamera Binoculare", binocular_desc: "Modulo di fotocamera a doppia lente per applicazioni di visione 3D e rilevamento della profondità", drone: "Modulo di Fotocamera per Drone", drone_desc: "Modulo di fotocamera ad alta risoluzione leggero per applicazioni di droni" },
+                facility: { title: "Impianti e Attrezzature della Fabbrica", subtitle: "Ambiente di produzione di punta e attrezzature di fabbricazione avanzate", cleanroom: "Ambiente di Salla Bianca", clean1: "Sale Bianche Classe 10 e Classe 100", clean2: "Officina di Salla Bianca Classe 1000", clean3: "Banco di Lavoro di Salla Bianca Classe 100", production: "Linee di Produzione", line1: "7 Linee di Produzione CCM", line2: "3 Linee SMT JUKI (2070)", line3: "1 Forno a Rifiuto Jintuo Nuovo con 8 Zone Termiche", testing: "Attrezzature di Test", test1: "30 Scatole di Luce di Test", test2: "Attrezzatura di Pulizia Ultrasonica a 6 Fessure", test3: "Sistema Automatico di Rigenerazione dell'Acqua Pura" },
+                about: { title: "Chi Siamo LeadTech", desc1: "LeadTech si specializza nella progettazione e nella fabbricazione di moduli di fotocamera avanzati e soluzioni di imaging.", desc2: "Dotata di solide capacità di R&S e di impianti di produzione ben consolidati, l'azienda fornisce prodotti affidabili e ad alte prestazioni per applicazioni che includono elettronica di consumo, sistemi automobilistici, dispositivi per la casa intelligente e visione industriale.", desc3: "Dotata di sale bianche di classe 10 e 100, linee di produzione automatizzate e sistemi completi di test e calibrazione, garantiamo una qualità costante e una consegna rapida per i clienti globali.", desc4: "Siamo impegnati a fornire soluzioni personalizzate, prezzi competitivi e supporto di partnership a lungo termine.", clients: "I Nostri Clienti" },
+                contact: { title: "Contattaci", subtitle: "Per ordini all'ingrosso, personalizzazioni o qualsiasi domanda, non esitare a contattarci", info: "Informazioni di Contatto", email: "Email", whatsapp: "WhatsApp", address: "Il Nostro Indirizzo", europe: "Sede Europea", china_office: "Ufficio in Cina", factory: "Fabbrica" },
+                footer: { copyright: "© 2024 LeadTech Solution GmbH. Tutti i Diritti Riservati. Fornitore di Moduli di Fotocamera Avanzati e Soluzioni di Imaging" },
+                meta: { title: "LeadTech | Moduli di Fotocamera Avanzati e Soluzioni di Imaging", desc: "LeadTech - Moduli di Fotocamera Avanzati e Soluzioni di Imaging, Design e Produzione per Clienti Globali" }
             }
         };
 
@@ -399,24 +333,24 @@
 
         // 初始化语言
         function initLang() {
-            // 从URL参数或localStorage获取语言偏好
+            // 从URL参数或本地存储获取语言偏好
             const urlParams = new URLSearchParams(window.location.search);
             const urlLang = urlParams.get('lang');
             const savedLang = localStorage.getItem('preferred_lang');
             
             currentLang = urlLang || savedLang || 'en';
-            // 校验语言是否在支持列表内
+            // 校验语言是否支持，不支持则用英语兜底
             if (!langPack[currentLang]) currentLang = 'en';
             
             // 设置下拉框选中状态
             document.getElementById('lang-select').value = currentLang;
-            // 应用语言
+            // 应用语言到页面
             applyLang();
-            // 应用RTL布局
+            // 应用RTL布局（阿拉伯语）
             applyRTL();
         }
 
-        // 应用语言到页面
+        // 应用语言到页面所有元素
         function applyLang() {
             // 替换所有带data-lang属性的文本
             document.querySelectorAll('[data-lang]').forEach(el => {
@@ -429,18 +363,15 @@
                 if (text) el.textContent = text;
             });
 
-            // 更新meta标签和标题
+            // 更新页面标题和meta描述
             document.getElementById('page-title').textContent = langPack[currentLang].meta.title;
             document.getElementById('meta-desc').setAttribute('content', langPack[currentLang].meta.desc);
 
-            // 重新渲染产品（适配当前语言）
-            renderProducts();
-
-            // 保存语言偏好
+            // 保存用户语言偏好
             localStorage.setItem('preferred_lang', currentLang);
         }
 
-        // 应用RTL布局（阿拉伯语专属）
+        // 阿拉伯语RTL从右到左布局适配
         function applyRTL() {
             const html = document.documentElement;
             if (currentLang === 'ar') {
@@ -462,78 +393,20 @@
             }
         }
 
-        // 渲染产品列表（多语言适配）
-        function renderProducts() {
-            const productGrid = document.getElementById('product-grid');
-            const loadingText = document.getElementById('loading-text');
-            
-            if (!globalProducts || globalProducts.length === 0) {
-                if (loadingText) {
-                    loadingText.textContent = langPack[currentLang].products.empty;
-                }
-                return;
-            }
-
-            // 清空网格
-            productGrid.innerHTML = '';
-
-            // 渲染每个产品
-            globalProducts.forEach(product => {
-                // 获取当前语言的名称和描述，为空则用英语兜底
-                const name = product[`name_${currentLang}`] || product.name_en;
-                const description = product[`description_${currentLang}`] || product.description_en;
-
-                const productCard = document.createElement('div');
-                productCard.className = 'bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow';
-                productCard.innerHTML = `
-                    <img src="${product.image_url}" alt="${name}" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">${name}</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-3">${description}</p>
-                        <p class="text-2xl font-bold text-blue-700 mb-4">$${product.price.toFixed(2)}</p>
-                        <a href="#contact" class="block w-full bg-blue-700 text-white text-center py-2 rounded-md hover:bg-blue-800 transition">${langPack[currentLang].products.inquiryBtn}</a>
-                    </div>
-                `;
-                productGrid.appendChild(productCard);
-            });
-        }
-
-        // 加载产品数据
-        async function loadProducts() {
-            const productGrid = document.getElementById('product-grid');
-            const loadingText = document.getElementById('loading-text');
-            
-            try {
-                const response = await fetch('/api/products');
-                if (!response.ok) throw new Error('API request failed');
-                
-                globalProducts = await response.json();
-                loadingText.remove();
-                renderProducts();
-
-            } catch (error) {
-                if (loadingText) {
-                    loadingText.textContent = langPack[currentLang].products.loadError;
-                }
-                console.error('Product load error:', error);
-            }
-        }
-
-        // 语言切换事件
+        // 语言切换事件监听
         document.getElementById('lang-select').addEventListener('change', (e) => {
             currentLang = e.target.value;
             applyLang();
             applyRTL();
-            // 更新URL参数（不刷新页面）
+            // 更新URL参数，不刷新页面
             const url = new URL(window.location);
             url.searchParams.set('lang', currentLang);
             window.history.pushState({}, '', url);
         });
 
-        // 页面初始化
+        // 页面加载完成后初始化
         window.addEventListener('DOMContentLoaded', () => {
             initLang();
-            loadProducts();
         });
 
         // 浏览器前进后退适配语言
